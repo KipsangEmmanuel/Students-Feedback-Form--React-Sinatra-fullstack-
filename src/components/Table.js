@@ -1,5 +1,17 @@
+import { useEffect } from "react";
 import "../css/Table.css"
+import { useState } from "react";
+import TableRaw from "./Student";
 function Table() {
+ const [students, setStudents] = useState([])
+
+  useEffect(() => {
+    // fetch logic
+    fetch("http://localhost:3002/students")
+    .then((res) => res.json())
+    .then(data => setStudents(data))
+  }, [])
+
     return (
         <>
             <table class="table">
@@ -13,17 +25,19 @@ function Table() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>
-                        <button className="btn m-2">Update</button>
-                        <button className="btn">Delete</button>
-                    </td>
-                    </tr>
-
+                    {
+                        students.map((student) => {
+                            return (
+                                <TableRaw 
+                                    key={student.id}
+                                    id={student.id} 
+                                    name={student.name} 
+                                    email={student.email} 
+                                    course={student.course}
+                                />
+                            )
+                        })
+                    }
                 </tbody>
             </table>
         </>
