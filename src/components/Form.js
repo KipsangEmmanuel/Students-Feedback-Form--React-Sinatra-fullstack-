@@ -13,9 +13,21 @@ function Form () {
      setFormData({...formData, [event.target.id]: event.target.value});
    }
 
+   function handleSubmit() {
+    fetch("http://localhost:3002/students", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    })
+    .then((res) = res.json())
+    .then(data => console.log(data))
+   }
+
     return(
         <>
-          <form className="container">
+          <form className="container" onSubmit={handleSubmit}>
             <div className="mb-3">
               <label htmlFor="name" className="form-label">Full Name</label>
               <input 

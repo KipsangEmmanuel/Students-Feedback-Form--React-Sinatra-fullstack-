@@ -1,22 +1,28 @@
 {
-    "students": [
-        {
-            "id": 1,
-            "name": "Emmannuel",
-            "Email": "emmanuel@gmail.com",
-            "course": "Software Engineering"
-        },
-        {
-            "id": 2,
-            "name": "Kipsang",
-            "Email": "kipsang@gmail.com",
-            "course": "Data Engineering"
-        },
-        {
-            "id": 3,
-            "name": "Kibiwot",
-            "Email": "kibiwot@gmail.com",
-            "course": "Cyber security"
-        }
-    ]
+  "students": [
+    {
+      "id": 1,
+      "name": "Emmannuel",
+      "Email": "emmanuel@gmail.com",
+      "course": "Software Engineering"
+    },
+    {
+      "id": 2,
+      "name": "Kipsang",
+      "Email": "kipsang@gmail.com",
+      "course": "Data Engineering"
+    },
+    {
+      "id": 3,
+      "name": "Kibiwot",
+      "Email": "kibiwot@gmail.com",
+      "course": "Cyber security"
+    },
+    {
+      "name": "Emmanuel Kipsang",
+      "email": "emmanuelkipsang125@gmail.com",
+      "course": "Software Engineering",
+      "id": 4
+    }
+  ]
 }
