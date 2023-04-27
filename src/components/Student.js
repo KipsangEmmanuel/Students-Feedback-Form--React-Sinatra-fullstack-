@@ -1,4 +1,8 @@
- function TableRaw({id, name, email, course}) {
+ function TableRaw({id, name, email, course, onDelete}) {
+
+    function deleteRaw() {
+        onDelete(id)
+    }
     return(
         <>
              <tr key="student.id">
@@ -8,7 +12,7 @@
                  <td>{course}</td>
                 <td>
                     <button className="btn m-2">Update</button>
-                    <button className="btn">Delete</button>
+                    <button className="btn" onClick={deleteRaw}>Delete</button>
                  </td>
             </tr>
         </>

@@ -12,6 +12,18 @@ function Table() {
     .then(data => setStudents(data))
   }, [])
 
+
+  function deleteRecord(id) {
+    fetch(`http://localhost:3002/students/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then((res) => res.json())
+    .then(data => console.log(data))
+  }
+
     return (
         <>
             <table class="table">
@@ -34,6 +46,7 @@ function Table() {
                                     name={student.name} 
                                     email={student.email} 
                                     course={student.course}
+                                    onDelete={deleteRecord}
                                 />
                             )
                         })

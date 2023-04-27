@@ -21,8 +21,8 @@ function Form () {
       },
       body: JSON.stringify(formData)
     })
-    .then((res) = res.json())
-    .then(data => console.log(data))
+    // .then((res) = res.json())
+    // .then(data => console.log(data))
    }
 
     return(
