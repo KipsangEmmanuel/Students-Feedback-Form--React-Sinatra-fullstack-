@@ -24,6 +24,20 @@ function Table() {
     .then(data => console.log(data))
   }
 
+  function updateRecord(id) {
+    fetch(`http://localhost:3002/students/${id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify ({
+            name: "John Doe"
+        })
+    })
+    .then((res) => res.json())
+    .then(data => console.log(data))
+  }
+
     return (
         <>
             <table class="table">
@@ -47,6 +61,7 @@ function Table() {
                                     email={student.email} 
                                     course={student.course}
                                     onDelete={deleteRecord}
+                                    onUpdate={updateRecord}
                                 />
                             )
                         })
