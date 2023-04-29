@@ -12,7 +12,7 @@ function NavBar() {
                 <NavLink className={"a"} to="/response" end>
                     Response
                 </NavLink>
-                <NavLink className={"a"} to="/" end>
+                <NavLink className={"a"} to="/settings" end>
                     Settings
                 </NavLink>
                 {/* <a href="">Students</a>

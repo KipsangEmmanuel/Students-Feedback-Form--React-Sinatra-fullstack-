@@ -3,6 +3,7 @@ import Form from "./components/Form";
 import Table from "./components/Table";
 import TableRaw from "./components/Student";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import User from "./components/UserDetails";
 function App() {
   return (
     <div>
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/students" element={<Table />}></Route>
         <Route path="/response" element={<Form />}></Route>
-        <Route path="/" element={<Table />}></Route>
+        <Route path="/settings" element={<User />}></Route>
 
       </Routes>
       </BrowserRouter>
