@@ -2,15 +2,9 @@
   "students": [
     {
       "id": 1,
-      "name": "John Doe",
+      "name": "Emmanuel Kipsang",
       "Email": "emmanuel@gmail.com",
       "course": "Software Engineering"
-    },
-    {
-      "id": 2,
-      "name": "Kipsang",
-      "Email": "kipsang@gmail.com",
-      "course": "Data Engineering"
     },
     {
       "id": 3,
@@ -29,6 +23,12 @@
       "email": "juma@gmail.com",
       "course": "Android development",
       "id": 5
+    },
+    {
+      "name": "John Doe",
+      "email": "emmqnuelkipsqng@gmail.com",
+      "course": "Android development",
+      "id": 6
     }
   ]
 }

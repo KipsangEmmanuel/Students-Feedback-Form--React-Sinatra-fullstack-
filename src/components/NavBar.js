@@ -5,7 +5,7 @@ function NavBar() {
     //I passed <a> tag to the NavLink className because I had already styled the <a> tag
     return (
         <>
-            <nav className="container"> 
+            <nav id="nav" className="container">
                 <NavLink className={"a"} to="/students" end>
                     Students
                 </NavLink>

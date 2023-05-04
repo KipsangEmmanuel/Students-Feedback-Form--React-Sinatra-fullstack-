@@ -2,6 +2,7 @@
 
 .container {
     margin-top: 10px;
+    /* background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%); */
 }
 
 a {
@@ -11,4 +12,6 @@ a {
     color: black !important;
     font-size: larger;
     font-weight: bolder;
+    /* display: flex; */
+    text-align: center;
 }
