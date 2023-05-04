@@ -12,6 +12,4 @@ a {
     color: black !important;
     font-size: larger;
     font-weight: bolder;
-    /* display: flex; */
-    text-align: center;
 }

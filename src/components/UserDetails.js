@@ -1,7 +1,16 @@
 function User() {
-    return(
+    return (
         <>
-        <p style={{fontFamily: "monospace", color: "#863E04"}}>Change settings!!</p>
+            <h1 style={
+                {
+                    // fontFamily: "monospace",
+                    color: "#863E04",
+                    fontSize: "laeger",
+                    fontWeight: "bolder",
+                    textAlign: "center",
+                    margin: "20px"
+                }
+            }><i>Change Settings!!</i></h1>
         </>
     )
 }
