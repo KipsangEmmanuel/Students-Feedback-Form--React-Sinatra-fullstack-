@@ -14,7 +14,7 @@ function Form() {
   }
 
   function handleSubmit() {
-    fetch("http://localhost:3002/students", {
+    fetch("http://[::1]:8000/students", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

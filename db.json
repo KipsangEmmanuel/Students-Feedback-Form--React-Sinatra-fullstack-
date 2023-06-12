@@ -29,6 +29,30 @@
       "email": "emmqnuelkipsqng@gmail.com",
       "course": "Android development",
       "id": 6
+    },
+    {
+      "name": "Ambuso ",
+      "email": "ambuso@gmail.com",
+      "course": "Software Engineering",
+      "id": 7
+    },
+    {
+      "name": "Goat Matata",
+      "email": "goat@gmail.com",
+      "course": "Data Science",
+      "id": 8
+    },
+    {
+      "name": "John Doe",
+      "email": "mary@gmail.com",
+      "course": "Software Engineering",
+      "id": 9
+    },
+    {
+      "name": "Harun Mbaabu",
+      "email": "harun@gmail.com",
+      "course": "Data Science",
+      "id": 10
     }
   ]
 }
